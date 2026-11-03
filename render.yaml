@@ -1,0 +1,11 @@
+# Render Blueprint for the live demo. The data lives in the memory of a single Node process, so the
+# service runs as one instance; it resets (back to the sample tasks) on every deploy or restart.
+services:
+  - type: web
+    name: artefact-tasks-trpc
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
