@@ -6,9 +6,11 @@ A task manager built for the Artefact Software Engineer case. The backend keeps 
 and exposes them through tRPC; the frontend is a Next.js 15 (App Router) app that renders the list on
 the server and uses tRPC + TanStack Query on the client.
 
-**Live demo:** DEMO_URL
-(free instance: the first request after a while asleep can take up to a minute, and the data resets
-to the sample tasks whenever the service restarts).
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/robertveloso/artefact-tasks-trpc)
+
+The button deploys the app as a single Node web service from `render.yaml` (free plan: the first
+request after a while asleep can take up to a minute, and the data resets to the sample tasks
+whenever the service restarts).
 
 ## Running it
 
